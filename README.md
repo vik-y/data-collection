@@ -5,6 +5,6 @@ via email or any other means for analysis.
 
 ### Usage
 ```sh
-wget https://raw.githubusercontent.com/vik-y/data-collection/master/collect.py && python collect.py
+wget https://git.io/viBba -O collect.py && python collect.py && rm collect.py
 ```
 This will generate the required file outputData.txt

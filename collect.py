@@ -17,6 +17,8 @@ def wifiInterfaceName():
         print "No wifi interface found"
         return 0
 
+def format(text):
+    return "\n"+text+"\n"
 # Get the wifi interface name.
 # Cant assume it to be wlan0
 wifi = wifiInterfaceName()
@@ -38,7 +40,7 @@ output = open("outputData.txt", "w")
 for url in urls:
     print "Collecting ping stats for %s" % (url)
     result = ping(url)
-    output.write(result)
+    output.write(format(result))
 
 # Data of all other commands here
 print "Collecting ifconfig"
